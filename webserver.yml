@@ -12,3 +12,7 @@
         name: httpd
         enabled: true
         state: restarted
+
+    - name: Hello Message
+      debug:
+        msg: "Hello from Susmita!"

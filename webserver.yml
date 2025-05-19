@@ -13,6 +13,17 @@
         enabled: true
         state: restarted
 
-    - name: Hello Message
-      debug:
-        msg: "Hello from Susmita!"
+    - name: create a file
+      ansible.builtin.file:
+        name: /var/www/html/index.html
+        owner: awx
+        group: awx
+        mode: 0644
+
+    - name: copy the content.
+      lineinfile:
+        path: /var/www/html
+        line: "{{ web_message }}"
+
+      
+      

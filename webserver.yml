@@ -19,6 +19,7 @@
         owner: awx
         group: awx
         mode: 0644
+        state: touch
 
     - name: copy the content.
       lineinfile:

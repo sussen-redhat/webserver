@@ -1,0 +1,14 @@
+- name: Install web server on the hosts
+  hosts: localhost
+  tasks:
+
+    - name: install web server on the hosts
+      ansible.builtin.dnf:
+        name: httpd
+        state: latest
+
+    - name: restart the web server on the target host
+      ansible.builtin.service:
+        name: httpd
+        enabled: true
+        state: restart

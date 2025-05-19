@@ -1,5 +1,5 @@
 - name: Install web server on the hosts
-  hosts: localhost
+  hosts: all
   tasks:
 
     - name: install web server on the hosts

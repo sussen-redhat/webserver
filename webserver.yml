@@ -23,7 +23,7 @@
 
     - name: copy the content.
       lineinfile:
-        path: /var/www/html
+        path: /var/www/html/index.html
         line: "{{ web_message }}"
 
       

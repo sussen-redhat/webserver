@@ -11,4 +11,4 @@
       ansible.builtin.service:
         name: httpd
         enabled: true
-        state: restart
+        state: restarted

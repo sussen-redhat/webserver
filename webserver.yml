@@ -13,6 +13,7 @@
         name: httpd
         enabled: true
         state: restarted
+      ignore_errors: true
 
     - name: create a file
       file:

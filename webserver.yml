@@ -20,7 +20,7 @@
         group: awx
         mode: 0644
         state: touch
-    tasks:
+    
     - name: "Include setup tasks"
       include_tasks: tasks/setup.yml
 

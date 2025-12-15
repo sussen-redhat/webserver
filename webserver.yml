@@ -3,18 +3,18 @@
   tasks:
 
     - name: install web server on the hosts
-      ansible.builtin.dnf:
+      dnf:
         name: httpd
         state: latest
 
     - name: restart the web server on the target host
-      ansible.builtin.service:
+      service:
         name: httpd
         enabled: true
         state: restarted
 
     - name: create a file
-      ansible.builtin.file:
+      file:
         name: /var/www/html/index.html
         owner: awx
         group: awx

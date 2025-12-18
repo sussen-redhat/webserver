@@ -1,0 +1,3 @@
+---
+- name: Try to include a non-existent task file
+  import_tasks: missing_tasks.yml
